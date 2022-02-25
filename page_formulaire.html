@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>page reservation</title>
+        <link rel="stylesheet" href="formulair.css">
+    </head>
+    <body>
+        <header>
+<img src="foto_vidio/logo.png" alt="logo">
+<div id="sal">salle taj</div>
+<div id="email">taj.servesse@gmail.com</div>
+<div id="tele">06.24.86.02.90</div>
+<p>REMLIR  FORMULAIRE</p>
+<div id="baner"><a href="page_principale.html">accueil</a></div>
+        </header>
+        <main>
+            <form action="http://localhost:4432/projee_wib/test_project.php" method="post">
+
+                
+                     <h2 class="titre"> informations:</h2>
+                    <div class="prenom1">prenom </div>     <div class="prenom2">nom</div>
+                <input type="text" name="prenom" id="prenom_nom">    <input type="text" name="nom" id="prenom_nom"  >
+                            
+                        
+                 <div class="title_text">cin:</div>
+                       <input type="text" name="cne" class="text" >
+                <div class="title_text">Email :</div>
+                       <input type="email" name="mail" class="text" >
+                <div class="title_text">telephon</div>
+                       <input type="tel" name="telephone" class="text" >
+                <h2 class="titre"> reservation:</h2>
+                <div class="title_text">genre de fete</div>     
+                   <select name="choix1" class="text" >                    
+                             <option value="marriage">marriage</option>
+                             <option value="anniversaire">anniversaire</option>
+                             <option value="circoncision">circoncision</option>
+                    </select>
+                    <div class="title_text">nomber des tables :</div>
+                      <input type="number" name="nbr" class="text" min="10" max="70">
+               <div class="title_text">date de reservation</div>
+                     <input type="date"  name="date" value="2021-12-12" min="2021-12-12" max="2022-05-01"  class="text">
+       
+               <fieldset id="zzz"><legend>traiteur</legend>
+                     <div class="position_radio">
+                            <h2>oui</h2> <input type="radio" name="traiteur" value="oui" class="checkbokx"/>
+                            <h2>non</h2><input type="radio" name="traiteur" value="non" class="checkbokx"/>
+                     </div>
+               </fieldset>
+               
+              <fieldset ><legend>coiffure</legend>
+                  <div class="position_radio">
+                     <h2>oui</h2><input type="radio" name="coifur" value="oui" class="checkbokx"/>
+                     <h2>non</h2><input type="radio" name="coifur" value="non" class="checkbokx"/>
+                  </div>
+              </fieldset>
+            
+                <fieldset><legend><div >music</div></legend>
+                    
+                    <h2>chaabi</h2> <input type="checkbox"  name="music" value="chaabi" class="checkbokx">
+                    <h2>amdah</h2> <input type="checkbox"   name="music" value="amdah" class="checkbokx"> 
+               
+                      </fieldset>
+                
+                       <fieldset><legend>voiture</legend>
+                
+                            <h2>porch</h2><input type="checkbox" name="voitur" value="porch" class="checkbokx">
+                            <h2>limousine</h2><input type="checkbox" name="voitur" value="limousine" class="checkbokx">
+    
+                       </textarea>
+                    </fieldset>
+                    <div class="title_t">d'autrs desirs</div>
+                    <textarea name="autre_desirs" rows=5 cols=40 placeholder="autre choix " id="text_autr_dezir"></textarea>
+                       <input type="submit" value="Valider" name="Valider" class="boton">
+                       <input type="reset" value="Annuler" class="boton">      
+            </form>
+        </main>
+    </body>
+</html>
